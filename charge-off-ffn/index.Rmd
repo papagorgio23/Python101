@@ -1,0 +1,360 @@
+---
+title: "Charge Off Model"
+author: "Jason Lee, Data Scientist"
+output: 
+  flexdashboard::flex_dashboard:
+    logo: ffn_white_logo.png
+    orientation: columns
+    vertical_layout: fill
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library("flexdashboard")
+library("tidyverse")
+library("caret")
+
+## CPLUS
+cplus_model <- readRDS("./fit.glm.rds")
+dataset <- read_csv("./training_data.csv")
+results <- read_csv("./results_data.csv")
+new_case <- dataset %>% 
+  slice(1)
+
+## FPLUS
+fplus_model <- readRDS("./ffit.glm.rds")
+fdataset <- read_csv("./ftraining_data.csv")
+fresults <- read_csv("./fresults_data.csv")
+fnew_case <- fdataset %>% 
+  slice(1)
+```
+
+
+Sidebar {.sidebar}
+=====================================
+
+<br>
+
+Adjust the inputs for the model to see the updated prediction result.
+
+<br>
+
+**General Inputs:**
+
+
+```{r}
+sliderInput("ContactsMade_Inbound", label = "Inbound Contacts:",
+            min = 0, max = 5, value = 1, step = 1)
+
+selectInput("ach", label = "ACH Type:",
+            choices = c("Recurring", "One-Time", "No ACH"))
+
+numericInput("maxpastDue", label = "Max Days Past Due Previously:",
+            min = 0, max = 120, value = 0, step = 5)
+
+sliderInput("risk", label = "Risk Group:",
+            min = 1, max = 18, value = 11, step = 1)
+
+```
+
+***
+
+
+<br>
+
+**C+ Inputs:**
+
+
+```{r}
+numericInput("acct", label = "Number of Accounts:",
+            min = 1, max = 35, value = 8, step = 1)
+
+selectInput("co_app", label = "Co-App Present:",
+            choices = c("Yes", "No"))
+
+numericInput("times", label = "Number of Times Delinquent:",
+            min = 0, max = 10, value = 1, step = 1)
+
+sliderInput("outbound", label = "Outbound Contacts:",
+            min = 0, max = 5, value = 1, step = 1)
+
+sliderInput("income", label = "Annual Income:",
+            min = 12000, max = 150000, value = 50000, step = 5000)
+
+```
+
+
+***
+
+
+<br>
+
+**F+ Inputs:**
+
+
+```{r}
+numericInput("apr", label = "APR:",
+            min = 4.99, max = 30, value = 18.99, step = 1)
+
+selectInput("utm", label = "Marketing Channel:",
+            choices = c('Lending Tree',
+                        'FDR',
+                        'ck',
+                        'creditkarma',
+                        'Quinstreet',
+                        'credible',
+                        'website',
+                        'even',
+                        'google',
+                        'Rescue',
+                        'Direct',
+                        'organic',
+                        'website',
+                        'nerdwallet',
+                        'Direct Mail',
+                        'Phone',
+                        'dm',
+                        'crowdnetic'))
+
+sliderInput("lti", label = "Loan to Income Ratio (LTI):",
+            min = 0, max = 35, value = 15, step = 1)
+
+sliderInput("inq6", label = "Number of Inquiries:",
+            min = 0, max = 4, value = 0, step = 1)
+```
+
+
+
+
+
+C+ Model Overview {data-icon="fa-bar"}
+===
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### C+ Charge Off Probability
+
+```{r}
+renderGauge({
+  new_case <- new_case %>% 
+    mutate(maxDue = input$maxpastDue,
+           ach_billing = ifelse(input$ach == "Billing", 1, 0),
+           ach_onetime = ifelse(input$ach == "One-Time", 1, 0),
+           ach_recurring = ifelse(input$ach == "Recurring", 1, 0),
+           ach_none = ifelse(input$ach == "No ACH", 1, 0),
+           co_app = ifelse(input$co_app == "Yes", 1, 0),
+           ContactsMade_Inbound = input$ContactsMade_Inbound,
+           risk_group = input$risk,
+           num_of_accounts = input$acct,
+           times_pastdue = input$times,
+           
+           ContactsMade_Outbound = input$outbound,
+           Made_Promise = 0,
+           annual_income = input$income
+           
+           )
+  
+  # make prediction
+  chargeOff_pred <- round(predict(cplus_model, newdata = new_case, type = "prob"), 4)
+  
+  # get charge off probability
+  prediction <- chargeOff_pred$`1`*100
+  
+  gauge(
+    value = prediction,
+    min = 0,
+    max = 100,
+    symbol = "%",
+    gaugeSectors(success = c(0, 50), warning = c(51, 75), danger = c(76, 100)),
+  )
+})
+```
+
+### Feature Importance Chart
+
+```{r}
+# feature importance
+glm_Imp <- varImp(cplus_model, scale = FALSE)
+imp <- as.data.frame(glm_Imp$importance)
+imp$Features <- rownames(imp)
+
+imp <- imp %>% 
+  mutate(Group = case_when(
+                   Overall > 3 ~ "High",
+                   between(Overall, 2, 3) ~ "Medium",
+                   TRUE ~ "Low"),
+         Group = factor(Group, levels = c("High", "Medium", "Low"))
+          
+  ) %>% 
+  arrange(desc(Overall))
+
+
+ggplot(imp, aes(x = reorder(Features, Overall), y = Overall, fill = Group)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(#breaks = c("2", "1", "0.5"), 
+                    values = c("blue", "lightblue", "grey")) +
+  labs(title = "Feature Importance",
+       subtitle = "C+ Charge Off Model",
+       x = "",
+       y = "Importance",
+       fill = "") +
+  coord_flip() +
+  theme_bw()
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Predicted Charge Off Rate Vs. Actual Charge Off Rate
+
+```{r}
+## create deciles
+decile_results <- results %>% 
+  group_by(Decile) %>% 
+  summarise(Actual = mean(Charged_off),
+            Predicted = mean(`1`),
+            Sample_Size = n(),
+  ) %>% 
+  arrange(desc(Decile))
+
+## Plot Deciles
+decile_results %>% 
+  ggplot() +
+  geom_point(aes(x = factor(Decile), y = Actual), col = "blue") +
+  geom_line(aes(x = Decile, y = Actual, color = "blue")) +
+  geom_point(aes(x = factor(Decile), y = Predicted), col = "red") +
+  geom_line(aes(x = Decile, y = Predicted, color = "red")) +
+  scale_colour_manual(name = '', 
+                      values = c('blue' = 'blue', 'red' = 'red'), labels = c('Actual','Predicted')) +
+  scale_y_continuous(labels = scales::label_percent()) +
+  labs(title = "C+ Charge Off Rate by Decile",
+       subtitle = "Actual Rates vs. Predicted Rates",
+       y = "Charge Off Rate",
+       x = "Decile") +
+  theme_bw()
+```
+
+
+
+F+ Model Overview {data-icon="fa-signal"}
+===
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### F+ Charge Off Probability
+
+```{r}
+renderGauge({
+  fnew_case <- fnew_case %>% 
+    mutate(maxDue = input$maxpastDue,
+           maxDue = ifelse(maxDue == 0, -1, maxDue),
+           maxDue = ifelse(maxDue >= 60, 60, maxDue),
+           ach_onetime = ifelse(input$ach == "One-Time", 1, 0),
+           ach_recurring = ifelse(input$ach == "Recurring", 1, 0),
+           #ach_recurring = ifelse(input$ach == "Billing", 1, 0),
+           ContactsMade_Inbound = input$ContactsMade_Inbound,
+           final_risk_group__c = input$risk,
+           utm = input$utm,
+           utm = case_when(
+               utm %in% c('Lending Tree',
+                          'FDR',
+                          'ck',
+                          'creditkarma') ~ 1,
+               utm %in% c('Quinstreet',
+                          'credible',
+                          'website',
+                          'even',
+                          'google') ~ 3,
+               TRUE ~ 2),
+           current_rate = input$apr,
+           lti__c = input$lti,
+           lti__c = case_when(
+                lti__c < 11 ~ 1,
+                lti__c >= 11 & lti__c < 16 ~ 2,
+                lti__c >= 16 & lti__c < 26 ~ 3,
+                TRUE ~ 4),
+           inquires_last_6_months__c = input$inq6,
+           inquires_last_6_months__c = ifelse(inquires_last_6_months__c > 2, 2, inquires_last_6_months__c))
+  
+  # make prediction
+  fchargeOff_pred <- round(predict(fplus_model, newdata = fnew_case, type = "prob"), 4)
+  
+  # get charge off probability
+  fprediction <- fchargeOff_pred$`1`*100
+  
+  gauge(
+    value = fprediction,
+    min = 0,
+    max = 100,
+    symbol = "%",
+    gaugeSectors(success = c(0, 50), warning = c(51, 75), danger = c(76, 100)),
+  )
+})
+```
+
+### Feature Importance Chart
+
+```{r}
+# feature importance
+fglm_Imp <- varImp(fplus_model, scale = FALSE)
+fimp <- as.data.frame(fglm_Imp$importance)
+fimp$Features <- rownames(fimp)
+
+fimp <- fimp %>% 
+  mutate(Group = case_when(
+                   Overall > 7 ~ "High",
+                   between(Overall, 3.5, 7) ~ "Medium",
+                   TRUE ~ "Low"),
+         Group = factor(Group, levels = c("High", "Medium", "Low"))
+          
+  ) %>% 
+  arrange(desc(Overall))
+
+
+ggplot(fimp, aes(x = reorder(Features, Overall), y = Overall, fill = Group)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(#breaks = c("2", "1", "0.5"), 
+                    values = c("blue", "lightblue", "grey")) +
+  labs(title = "Feature Importance",
+       subtitle = "F+ Charge Off Model",
+       x = "",
+       y = "Importance",
+       fill = "") +
+  coord_flip() +
+  theme_bw()
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Predicted Charge Off Rate Vs. Actual Charge Off Rate
+
+```{r}
+## create deciles
+fdecile_results <- fresults %>% 
+  group_by(Decile) %>% 
+  summarise(Actual = mean(Charged_off),
+            Predicted = mean(`1`),
+            Sample_Size = n(),
+  ) %>% 
+  arrange(desc(Decile))
+
+## Plot Deciles
+fdecile_results %>% 
+  ggplot() +
+  geom_point(aes(x = factor(Decile), y = Actual), col = "blue") +
+  geom_line(aes(x = Decile, y = Actual, color = "blue")) +
+  geom_point(aes(x = factor(Decile), y = Predicted), col = "red") +
+  geom_line(aes(x = Decile, y = Predicted, color = "red")) +
+  scale_colour_manual(name = '', 
+                      values = c('blue' = 'blue', 'red' = 'red'), labels = c('Actual','Predicted')) +
+  scale_y_continuous(labels = scales::label_percent()) +
+  labs(title = "F+ Charge Off Rate by Decile",
+       subtitle = "Actual Rates vs. Predicted Rates",
+       y = "Charge Off Rate",
+       x = "Decile") +
+  theme_bw()
+```
+
