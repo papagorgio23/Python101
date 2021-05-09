@@ -7,4 +7,5 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 2](https://github.com/papagorgio23/Python101/blob/master/Python_Math_101.ipynb): Basic Math with Python
 - [Lesson 3](https://github.com/papagorgio23/Python101/blob/master/EDA1.ipynb): Exploratory Data Analysis - Part 1
 - [Lesson 4](https://github.com/papagorgio23/Python101/blob/master/EDA2.ipynb): Exploratory Data Analysis - Part 2
-- [Lesson 5](https://github.com/papagorgio23/Python101/blob/master/Email_Notification_Template_Update_to_GBQ_.ipynb): Automated Email Notifications
+- [Lesson 5](https://github.com/papagorgio23/Python101/blob/master/California_Housing_EDA.ipynb): Exploratory Data Analysis - Part 3 - California Housing
+- [Lesson 6](https://github.com/papagorgio23/Python101/blob/master/Email_Notification_Template_Update_to_GBQ_.ipynb): Automated Email Notifications
