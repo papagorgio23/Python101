@@ -10,3 +10,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 5](https://github.com/papagorgio23/Python101/blob/master/California_Housing_EDA.ipynb): Exploratory Data Analysis - Part 3 - California Housing
 - [Lesson 6](https://github.com/papagorgio23/Python101/blob/master/Email_Notification_Template_Update_to_GBQ_.ipynb): Automated Email Notifications
 - [Lesson 7](https://github.com/papagorgio23/Python101/blob/master/Farmer_TL_Scorecard.ipynb): End-to-End Value Added Model (Sales team scorecards)
+- [Lesson 8](https://github.com/papagorgio23/Python101/blob/master/Guessing_Game.ipynb): Guessing Game
