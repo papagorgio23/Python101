@@ -13,3 +13,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 8](https://github.com/papagorgio23/Python101/blob/master/Guessing_Game.ipynb): Guessing Game
 - [Lesson 9](https://github.com/papagorgio23/Python101/blob/master/Linear_Regression_Example.ipynb): Linear Regression Model
 - [Lesson 10](https://github.com/papagorgio23/Python101/blob/master/ml_regression.ipynb): Linear Regression Model with Cross Validation
+- [Lesson 11](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Feature Selection
