@@ -15,3 +15,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 10](https://github.com/papagorgio23/Python101/blob/master/Linear_Regression_Example.ipynb): Linear Regression Model
 - [Lesson 11](https://github.com/papagorgio23/Python101/blob/master/ml_regression.ipynb): Linear Regression Model with Cross Validation
 - [Lesson 12](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Feature Selection
+- [Lesson 13](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Sports Betting Formulas
