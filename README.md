@@ -18,3 +18,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 13](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Sports Betting Formulas
 - [Lesson 14](https://github.com/papagorgio23/Python101/blob/master/Answers_MLB_Predictions.ipynb): Sports Betting Model - MLB
 - [Lesson 15](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
+- [Lesson 16](https://github.com/papagorgio23/Python101/blob/master/DFS_Football_Lineup_Optimizer.ipynb): Daily Fantasy Sports Lineup Optimizer
