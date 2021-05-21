@@ -19,4 +19,5 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 14](https://github.com/papagorgio23/Python101/blob/master/Answers_MLB_Predictions.ipynb): Sports Betting Model - MLB
 - [Lesson 15](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
 - [Lesson 16](https://github.com/papagorgio23/Python101/blob/master/DFS_Football_Lineup_Optimizer.ipynb): Daily Fantasy Sports Lineup Optimizer
-- [Lesson 17](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision
+- [Lesson 17](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
+- [Lesson 18](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
