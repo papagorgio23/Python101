@@ -22,3 +22,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 17](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
 - [Lesson 18](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
 - [Lesson 19](https://github.com/papagorgio23/Python101/blob/master/C%2B_Lead_Scoring_Modelv2.ipynb): Lead Scoring Model (FFN C+ Loans)
+- [Lesson 20](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
