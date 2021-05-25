@@ -24,3 +24,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 19](https://github.com/papagorgio23/Python101/blob/master/C%2B_Lead_Scoring_Modelv2.ipynb): Lead Scoring Model (FFN C+ Loans)
 - [Lesson 20](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
 - [Lesson 21](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
+- [Lesson 22](https://github.com/papagorgio23/Python101/blob/master/Forming_Teams.ipynb): Optimizer - Forming Teams
