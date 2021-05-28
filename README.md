@@ -26,4 +26,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 21](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
 - [Lesson 22](https://github.com/papagorgio23/Python101/blob/master/Forming_Teams.ipynb): Optimizer - Forming Teams
 - [Lesson 23](https://github.com/papagorgio23/Python101/blob/master/Linear_Regression_Example.ipynb): Linear Regression - Statsmodel vs SKLearn
-- [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Linear_Regression_Example.ipynb): Cox Regression with Time Dependent Covariate 
+- [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Cox_Regression_with_Time_Dependent_Covariate.ipynb): Cox Regression with Time Dependent Covariate
