@@ -31,3 +31,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 26](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
 - [Lesson 27](https://github.com/papagorgio23/Python101/blob/master/NLP_Test.ipynb): Natural Language Processing (NLP) Introduction
 - [Lesson 28](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
+- [Lesson 29](https://github.com/papagorgio23/Python101/blob/master/Optimizing_a_Library_Collection.ipynb): Optimizer - Library Collection
