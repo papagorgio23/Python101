@@ -23,20 +23,21 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 14](https://github.com/papagorgio23/Python101/blob/master/Linear_Regression_Example.ipynb): Linear Regression Model
 - [Lesson 15](https://github.com/papagorgio23/Python101/blob/master/ml_regression.ipynb): Linear Regression Model with Cross Validation
 - [Lesson 16](https://github.com/papagorgio23/Python101/blob/master/Linear_Regression_Example.ipynb): Linear Regression - Statsmodel vs SKLearn
-- [Lesson 17](https://github.com/papagorgio23/Python101/blob/master/Cox_Regression_with_Time_Dependent_Covariate.ipynb): Cox Regression with Time Dependent Covariate
-- [Lesson 18](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Feature Selection
+- [Lesson 17](https://github.com/papagorgio23/Python101/blob/master/NSF_Logistic_Regression_v1.ipynb): Classification Model - Logistic Regression
+- [Lesson 18](https://github.com/papagorgio23/Python101/blob/master/Cox_Regression_with_Time_Dependent_Covariate.ipynb): Cox Regression with Time Dependent Covariate
+- [Lesson 19](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Feature Selection
 ### A.I. Sports Models
-- [Lesson 19](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Sports Betting Formulas
-- [Lesson 20](https://github.com/papagorgio23/Python101/blob/master/Answers_MLB_Predictions.ipynb): Sports Betting Model - MLB
-- [Lesson 21](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
-- [Lesson 22](https://github.com/papagorgio23/Python101/blob/master/C%2B_Lead_Scoring_Modelv2.ipynb): Lead Scoring Model (FFN C+ Loans)
+- [Lesson 20](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Sports Betting Formulas
+- [Lesson 21](https://github.com/papagorgio23/Python101/blob/master/Answers_MLB_Predictions.ipynb): Sports Betting Model - MLB
+- [Lesson 22](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
+- [Lesson 23](https://github.com/papagorgio23/Python101/blob/master/C%2B_Lead_Scoring_Modelv2.ipynb): Lead Scoring Model (FFN C+ Loans)
 ### Deep Learning
-- [Lesson 23](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
-- [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
-- [Lesson 25](https://github.com/papagorgio23/Python101/blob/master/NLP_Test.ipynb): Natural Language Processing (NLP) Introduction
+- [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
+- [Lesson 25](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
+- [Lesson 26](https://github.com/papagorgio23/Python101/blob/master/NLP_Test.ipynb): Natural Language Processing (NLP) Introduction
 ### Simulation
-- [Lesson 26](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
+- [Lesson 27](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
 ### MISC
-- [Lesson 27](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
-- [Lesson 28](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
-- [Lesson 29](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
+- [Lesson 28](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
+- [Lesson 29](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
+- [Lesson 30](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
