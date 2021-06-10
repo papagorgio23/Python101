@@ -35,7 +35,7 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
 - [Lesson 25](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
 - [Lesson 26](https://github.com/papagorgio23/Python101/blob/master/NLP_Test.ipynb): Natural Language Processing (NLP) Introduction
-### Simulation
+### Simulation (A.I. Sports Model)
 - [Lesson 27](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
 ### MISC
 - [Lesson 28](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
