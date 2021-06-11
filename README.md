@@ -41,3 +41,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 28](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
 - [Lesson 29](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
 - [Lesson 30](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
+- [Lesson 31](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
