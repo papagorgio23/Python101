@@ -35,10 +35,11 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
 - [Lesson 25](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
 - [Lesson 26](https://github.com/papagorgio23/Python101/blob/master/NLP_Test.ipynb): Natural Language Processing (NLP) Introduction
+- [Lesson 27](https://github.com/papagorgio23/Python101/blob/master/RNN_Text_Gen_Model.ipynb): RNN Generative Language Model
 ### Simulation (A.I. Sports Model)
-- [Lesson 27](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
+- [Lesson 28](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
 ### MISC
-- [Lesson 28](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
-- [Lesson 29](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
-- [Lesson 30](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
-- [Lesson 31](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
+- [Lesson 29](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
+- [Lesson 30](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
+- [Lesson 31](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
+- [Lesson 32](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
