@@ -41,8 +41,9 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 29](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
 ### Games
 - [Lesson 30](https://github.com/papagorgio23/Python101/blob/master/Guessing_Game.ipynb): Guessing Game
+- [Lesson 31](https://github.com/papagorgio23/Python101/blob/master/Tic_Tac_Toe.ipynb): Tic Tac Toe
 ### MISC
-- [Lesson 31](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
-- [Lesson 32](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
-- [Lesson 33](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
-- [Lesson 34](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
+- [Lesson 32](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
+- [Lesson 33](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
+- [Lesson 34](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
+- [Lesson 35](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
