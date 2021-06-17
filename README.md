@@ -27,11 +27,11 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 18](https://github.com/papagorgio23/Python101/blob/master/Cox_Regression_with_Time_Dependent_Covariate.ipynb): Cox Regression with Time Dependent Covariate
 - [Lesson 19](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Feature Selection
 - [Lesson 20](https://github.com/papagorgio23/Python101/blob/master/Refresh_NPV_(8_10_20).ipynb): Lead Scoring Model (F+)
+- [Lesson 21](https://github.com/papagorgio23/Python101/blob/master/C%2B_Lead_Scoring_Modelv2.ipynb): Lead Scoring Model (FFN C+ Loans)
 ### A.I. Sports Models
-- [Lesson 21](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Sports Betting Formulas
-- [Lesson 22](https://github.com/papagorgio23/Python101/blob/master/Answers_MLB_Predictions.ipynb): Sports Betting Model - MLB
-- [Lesson 23](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
-- [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/C%2B_Lead_Scoring_Modelv2.ipynb): Lead Scoring Model (FFN C+ Loans)
+- [Lesson 22](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Sports Betting Formulas
+- [Lesson 23](https://github.com/papagorgio23/Python101/blob/master/Answers_MLB_Predictions.ipynb): Sports Betting Model - MLB
+- [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
 ### Deep Learning
 - [Lesson 25](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
 - [Lesson 26](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
