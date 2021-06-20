@@ -48,3 +48,4 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 34](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
 - [Lesson 35](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
 - [Lesson 36](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
+- [Lesson 37](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Validate F+ Lead Scoring Model (Unfinished)
