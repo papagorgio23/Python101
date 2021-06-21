@@ -31,7 +31,8 @@ Misc Tutorials to help improve Python Skills
 ### A.I. Sports Models
 - [Lesson 22](https://github.com/papagorgio23/Python101/blob/master/Feature_Selection.ipynb): Sports Betting Formulas
 - [Lesson 23](https://github.com/papagorgio23/Python101/blob/master/Answers_MLB_Predictions.ipynb): Sports Betting Model - MLB
-- [Lesson 24](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
+- [Lesson 24a](https://github.com/papagorgio23/Python101/blob/master/Win_Probability_Model.ipynb): Win Probability Model - NFL
+- [Lesson 24b](https://github.com/papagorgio23/Python101/blob/master/Answer_Win_Probability_Model.ipynb): Win Probability Model - NFL - Answers
 - [Lesson 25](https://github.com/papagorgio23/Python101/blob/master/Survivor_Pool.ipynb): NFL Survivor Pool (Unfinished)
 ### Deep Learning
 - [Lesson 26](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Basic_Classification.ipynb): Deep Learning 101: Computer Vision - Clothing
