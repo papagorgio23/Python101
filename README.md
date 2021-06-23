@@ -9,7 +9,8 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 3](https://github.com/papagorgio23/Python101/blob/master/Connect_to_GBQ.ipynb): Connect to Google BigQuery
 - [Lesson 4](https://github.com/papagorgio23/Python101/blob/master/Austen_GBQ_Upload.ipynb): Insert CSV file into Google Big Query
 - [Lesson 5](https://github.com/papagorgio23/Python101/blob/master/Email_Notification_Template_Update_to_GBQ_.ipynb): Automated Email Notifications
-- [Lesson 6](https://github.com/papagorgio23/Python101/blob/master/Functional_Introduction_To_Python_Section_1(Introductory_Concepts).ipynb): Functional Python
+- [Lesson 6](https://github.com/papagorgio23/Python101/blob/master/Functional_Introduction_To_Python_Section_1(Introductory_Concepts).ipynb): Functional Python - Part 1
+- [Lesson 7](https://github.com/papagorgio23/Python101/blob/master/Functional_Introduction_To_Python_Section_2(Functions).ipynb): Functional Python - Part 2
 ### Exploratory Data Analysis
 - [Lesson 6](https://github.com/papagorgio23/Python101/blob/master/EDA1.ipynb): Exploratory Data Analysis - Part 1
 - [Lesson 7](https://github.com/papagorgio23/Python101/blob/master/EDA2.ipynb): Exploratory Data Analysis - Part 2
