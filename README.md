@@ -55,3 +55,5 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 40](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
 - [Lesson 41](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Validate F+ Lead Scoring Model (Unfinished)
 - [Lesson 42](https://github.com/papagorgio23/Python101/blob/master/Retrain_F%2B_LS_Model.ipynb): Retrain F+ Lead Scoring Model (Unfinished)
+### R Project
+- [Lesson 43](https://github.com/papagorgio23/Python101/tree/master/charge-off-ffn): Deployed Model
