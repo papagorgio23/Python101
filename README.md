@@ -43,17 +43,18 @@ Misc Tutorials to help improve Python Skills
 - [Lesson 31](https://github.com/papagorgio23/Python101/blob/master/Computer_Vision_Cats_vs_Dogs.ipynb): Deep Learning 101: Computer Vision - Cats vs Dogs
 - [Lesson 32](https://github.com/papagorgio23/Python101/blob/master/NLP_Test.ipynb): Natural Language Processing (NLP) Introduction
 - [Lesson 33](https://github.com/papagorgio23/Python101/blob/master/RNN_Text_Gen_Model.ipynb): RNN Generative Language Model
+- [Lesson 34](https://github.com/papagorgio23/Python101/blob/master/bitcoin/Bitcoin_RNN.ipynb): RNN Model to Predict Bitcoin Prices
 ### Simulation (A.I. Sports Model)
-- [Lesson 34](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
+- [Lesson 35](https://github.com/papagorgio23/Python101/blob/master/Monte_Carlo_Simulation_(NBA_3_or_2).ipynb): Monte Carlo Simulation - NBA final seconds
 ### Games
-- [Lesson 35](https://github.com/papagorgio23/Python101/blob/master/Guessing_Game.ipynb): Guessing Game
-- [Lesson 36](https://github.com/papagorgio23/Python101/blob/master/Tic_Tac_Toe.ipynb): Tic Tac Toe
+- [Lesson 36](https://github.com/papagorgio23/Python101/blob/master/Guessing_Game.ipynb): Guessing Game
+- [Lesson 37](https://github.com/papagorgio23/Python101/blob/master/Tic_Tac_Toe.ipynb): Tic Tac Toe
 ### MISC
-- [Lesson 37](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
-- [Lesson 38](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
-- [Lesson 39](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
-- [Lesson 40](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
-- [Lesson 41](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Validate F+ Lead Scoring Model (Unfinished)
-- [Lesson 42](https://github.com/papagorgio23/Python101/blob/master/Retrain_F%2B_LS_Model.ipynb): Retrain F+ Lead Scoring Model (Unfinished)
+- [Lesson 38](https://github.com/papagorgio23/Python101/blob/master/ABtest.ipynb): A/B Testing
+- [Lesson 39](https://github.com/papagorgio23/Python101/blob/master/Tempe_Yelp_Reviews.ipynb): Scrape Yelp Reviews
+- [Lesson 40](https://github.com/papagorgio23/Python101/blob/master/Random_Dates.ipynb): Date Tricks
+- [Lesson 41](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Unfinished Model
+- [Lesson 42](https://github.com/papagorgio23/Python101/blob/master/Py_202_F%2B_Lead_Scoring_Model.ipynb): Validate F+ Lead Scoring Model (Unfinished)
+- [Lesson 43](https://github.com/papagorgio23/Python101/blob/master/Retrain_F%2B_LS_Model.ipynb): Retrain F+ Lead Scoring Model (Unfinished)
 ### R Project
-- [Lesson 43](https://github.com/papagorgio23/Python101/tree/master/charge-off-ffn): Deployed Model
+- [Lesson 44](https://github.com/papagorgio23/Python101/tree/master/charge-off-ffn): Deployed Model
